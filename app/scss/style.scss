@@ -6,11 +6,12 @@
 @import 'media';
 
 
+/*home section*/
 .home {
     background-image: url('../images/Rectangle\ 64.avif');
     height: 1000px;
     background-repeat: no-repeat;
-    background-size: center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,7 +117,7 @@
 .contacts {
     &__inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__item {
         width: 640px;
@@ -157,6 +158,8 @@
     text-transform: uppercase;
 }
 
+
+/*progress section*/
 .progress {
     &__inner {
         padding: 180px 0 220px;
@@ -179,7 +182,6 @@
         line-height: 29px;
         letter-spacing: .48px;
     }
-    // 
     &__box {
         display: flex;
     }
@@ -231,7 +233,7 @@
     }
 }
 
-
+/*slider section*/
 .slider {
     margin-bottom: 150px;
     &__inner {
@@ -321,7 +323,10 @@
     }
 }
 
+
+/*Matiril section*/
 .material {
+    margin-bottom: 180px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -340,6 +345,7 @@
         letter-spacing: .5px;
         text-transform: uppercase;
     }
+    /*svg before material__title*/
     &__service {
         position: relative;
         &::before {
@@ -376,6 +382,19 @@
             left: 0;
         }
     }
+    &__skin {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 57px;
+            background-image: url('../images/skin-icon.svg');
+            top: 0;
+            left: 0;
+        }
+    }
+
     &__info-text {
         margin-bottom: 40px;
         @extend %reforma-500;
@@ -411,6 +430,7 @@
     }
 }
 
+/*swiper slider*/
 .swiper-button-prev {
     width: 50px;
     height: 50px;
@@ -445,7 +465,6 @@
         transform: rotate(-45deg);
     }
 }
-
 .swiper-button-box {
     width: 636px;
     display: flex;
@@ -455,3 +474,115 @@
     padding: 0 10px;
 }
 
+/*services section*/
+.services {
+    margin-bottom: 180px;
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__decor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 307px);
+        grid-template-rows: repeat(1, 428px);
+        gap: 24px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border: 1px solid #898989;
+        padding: 0 10px;
+        text-align: center;
+        text-transform: uppercase;
+        @extend %reforma-600;
+        letter-spacing: .8px;
+    }
+    &__item-img-box {
+        display: inline-block;
+    }
+    /*margin img bottom*/
+    &__skin {
+        margin-bottom: 27px;
+    }
+    &__service {
+        margin-bottom: 20px;
+    }
+    &__master {
+        margin-bottom: 33px;
+    }
+    &__guarantee {
+        margin-bottom: 20px;
+    }
+    &__item-title {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+    &__item-text {
+        width: 226px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    /*button*/
+    &__item-btn {
+        display: inline-block;
+        width: 113px;
+        height: 41px;
+        margin-bottom: 50px;
+        position: relative;
+        &:hover {
+            .services__item-btn-decor {
+                width: 100%;
+            }
+        }
+    }
+    &__item-btn-decor {
+        height: 41px;
+        width: 58px;
+        background-color: #DB3138;
+        transition: all .5s;
+    }
+    &__item-link {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+        padding: 10px 20px 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+/*services- info section*/
+.services-info {
+    margin-bottom: 180px;
+}
+
+.works {
+    margin-bottom: 120px;
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    &__decor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6, 320px);
+        grid-template-rows: repeat(3, 280px);
+        justify-content: center;
+    }
+}
