@@ -55,7 +55,10 @@ function sprite() {
 
 function scripts() {
     return src([
-        'app/js/main.js',
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/swiper/swiper-bundle.js',
+        'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
