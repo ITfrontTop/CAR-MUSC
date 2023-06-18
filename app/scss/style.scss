@@ -126,6 +126,9 @@
     &__item + .menu__item {
         margin-left: 40px;
     }
+    &__btn {
+        display: none;
+    }
 }
 
 .decor {
@@ -952,3 +955,305 @@
 }
 
 /*adaptive*/
+@media (max-width: 1600px) {
+    .slick-next.slick-arrow {
+        top: -90px;
+        right: 30px;
+    }
+    .slick-prev.slick-arrow {
+        top: -90px;
+        left: 16px;
+    }
+}
+@media (max-width: 1370px) {
+    .home {
+        height: 100%;
+        &__content-title {
+            font-size: 110px;
+            line-height: 160px;
+        }
+        &__content-text {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    .menu {
+        width: 1000px;
+    }
+    .contacts {
+        &__inner {
+            margin-top: 20px;
+        }
+        &__item {
+            width: 453px;
+            height: 150px;
+        }
+        &__text {
+            font-size: 19px;
+        }
+    }
+    .slider {
+        display: none;
+    }
+    .services {
+        margin-bottom: 100px;
+        &__items {
+            grid-template-columns: repeat(2, 307px);
+            grid-template-rows: repeat(2, 428px);
+            justify-content: center;
+        }
+    }
+    .material {
+        &__info {
+            margin-top: 100px;
+        }
+    }
+    .services-info {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .material {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__info {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 1055px) {
+    .home {
+        &__content-title {
+            font-size: 90px;
+        }
+        &__content-text {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &__content-btn-link {
+            font-size: 20px;
+        }
+    }
+    .menu {
+        width: 900px;
+    }
+    .contacts {
+        &__title {
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 7px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .title {
+        font-size: 35px;
+        line-height: 44px;
+    }
+    .progress {
+        &__box {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 0 100px;
+        }
+        &__info {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        &__text {
+            max-width: 100%;
+            font-size: 17px;
+        }
+        &__decor {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        &__second-box {
+            transform: none;
+        }
+        &__box-item-text {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .menu {
+        width: 850px;
+    }
+    .home {
+        &__content-title {
+            font-size: 75px;
+        }
+        &__content-text {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+}
+
+@media (max-width: 902px) {
+    .home {
+        &__content-title {
+            font-size: 70px;
+            line-height: 120px;
+        }
+        &__content-btn-item {
+            height: 50px;
+            width: 75px;
+        }
+        &__content-btn-link {
+            font-size: 18px;
+            padding: 9px 30px 8px;
+
+        }
+    }
+    .contacts {
+        &__item {
+            height: 150px;
+        }
+    }
+    .menu {
+        width: 750px;
+        &__list {
+            display: inline-block;
+            text-align: left;
+            transform: translateY(-105%);
+            transition: transform .3s ease-in-out;
+        }
+        &__list--active {
+            transform: translateY(105%);
+        }
+        &__btn {
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+        }
+        &__item+.menu__item {
+            margin-left: 0;
+        }
+        &__btn-img {
+            fill: #db3138;
+        }
+    }
+    .material__info {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu {
+        width: 650px;
+    }
+    .contacts {
+        &__item {
+            width: 100%;
+        }
+    }
+    .home {
+        &__content-title {
+            font-size: 55px;
+            line-height: 80px;
+            margin-top: 110px;
+        }
+    }
+}
+
+@media (max-width: 705px) {
+    .menu {
+        width: 550px;
+    }
+    .material {
+        margin-bottom: 60px;
+        &__slider-inner {
+            display: none;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__info-title {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        &__info-text {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    .services {
+        margin-bottom: 60px;
+        &__items {
+            grid-template-columns: repeat(1, 270px);
+            grid-template-rows: repeat(4, 428px);
+        }
+    }
+}
+
+@media (max-width: 602px) {
+    .menu {
+        width: 450px;
+    }
+    .home {
+        &__content-text {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .contacts {
+        &__title {
+            font-size: 11px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+        &__text {
+            font-size: 11px;
+            padding: 0 5px;
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    .menu {
+        width: 350px;
+    }
+    .progress {
+        &__inner {
+            padding: 60px 0 60px;
+        }
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__box-item {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts {
+        &__text {
+            font-size: 10px;
+        }
+    }
+    .menu {
+        width: 260px;
+        height: 110px;
+    }
+}
