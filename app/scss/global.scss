@@ -1,11 +1,17 @@
-body {
-    background-color: #1E1E1E;
-    color: #fff;
-}
-
 .container {
     max-width: 1330px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+main {
+    flex-grow: 1;
+}
